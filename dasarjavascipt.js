@@ -1,4 +1,4 @@
 //variabel
 let nama = "Ronaldo";
 
-console.log(nama);
+console.log(nama); // output Ronaldo
