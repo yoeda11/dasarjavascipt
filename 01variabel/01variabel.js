@@ -1,9 +1,9 @@
 // menggunakan variable let
-let barang ="buku"; // mendeklarasikan variabel
+let barang ="buku"; // mendeklarasikan / menetapkan variabel
 console.log(barang); // output buku
 
 // merubah isi data 1
-let nama="budi"; // mendeklarasikan variabel
+let nama="budi"; // mendeklarasikan / menetapkan variabel
 console.log(nama); // output budi
 nama="angga" // merubah isi data
 console.log(nama); //output angga
