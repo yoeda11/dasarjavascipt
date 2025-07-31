@@ -16,8 +16,8 @@ Arithmetic operators perform arithmetic on numbers (literals or variables). / Op
  --	        Decrement
 */
 
-// Arithmetic Operations
-// A typical arithmetic operation operates on two numbers.
+// Arithmetic Operations / Operasi Aritmatika
+// A typical arithmetic operation operates on two numbers. / Operasi aritmatika pada umumnya beroperasi pada dua angka.
 
 // The two numbers can be literals:
 // Kedua angka tersebut dapat berupa literal:
