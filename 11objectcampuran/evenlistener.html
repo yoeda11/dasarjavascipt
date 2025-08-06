@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="myButton">Klik Saya</button>
+<div id="output"></div>
+
+<script>
+  const button = document.getElementById("myButton");
+  const output = document.getElementById("output");
+
+  button.addEventListener("click", function() {
+    // Data yang ingin ditambahkan
+    const newData = "Data baru telah ditambahkan!";
+
+    // Buat elemen baru untuk menampilkan data
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = newData;
+
+    // Tambahkan elemen baru ke dalam div output
+    output.appendChild(newParagraph);
+  });
+</script>
+
+
+</body>
+</html>

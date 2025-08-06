@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Form Pendaftaran</h2>
+
+  <form id="myForm">
+    <label>Nama:</label><br>
+    <input type="text" id="nama"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <p id="output"></p>
+
+  <script>
+    // Ambil elemen form
+    const form = document.getElementById("myForm");
+
+    // Tambahkan event saat form disubmit
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // mencegah reload halaman
+
+      // Ambil nilai input
+      const nama = document.getElementById("nama").value;
+      const email = document.getElementById("email").value;
+
+      // Tampilkan hasilnya
+      const output = document.getElementById("output");
+      output.textContent = `Halo ${nama}, email kamu adalah ${email}`;
+    });
+  </script>
+
+
+
+
+
+</body>
+</html>
