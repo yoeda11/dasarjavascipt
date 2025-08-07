@@ -1,3 +1,6 @@
+// https://bookshelfappsdicoding.netlify.app/
+
+
 
 let ambildata = document.getElementById("run");
 // let ambilnama = document.getElementById("Namaa").value;

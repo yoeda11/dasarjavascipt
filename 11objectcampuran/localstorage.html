@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh localStorage</title>
+</head>
+<body>
+
+  <input type="text" id="inputNama" placeholder="Masukkan nama">
+  <button onclick="simpanNama()">Simpan</button>
+  <button onclick="tampilkanNama()">Tampilkan</button>
+  <button onclick="hapusNama()">Hapus</button>
+
+  <p id="hasil"></p>
+
+  <script>
+    /*
+    // menyimpan data
+    // Kode di bawah menyimpan nilai "Conan" dengan kunci "nama".
+
+    localStorage.setItem("nama", "Conan");
+
+    // mengambil data
+    const nama = localStorage.getItem("nama");
+    console.log(nama); // Output: Yuda
+
+    // menghapus data
+    localStorage.removeItem("nama");
+
+    // menghapus semua data
+    localStorage.clear();
+
+    */
+
+    function simpanNama() {
+      const nama = document.getElementById("inputNama").value;
+      localStorage.setItem("nama", nama);
+    }
+
+    function tampilkanNama() {
+      const nama = localStorage.getItem("nama");
+      document.getElementById("hasil").textContent = nama ? `Nama: ${nama}` : "Tidak ada nama tersimpan.";
+    }
+
+    function hapusNama() {
+      localStorage.removeItem("nama");
+      document.getElementById("hasil").textContent = "Nama dihapus.";
+    }
+  </script>
+
+</body>
+</html>

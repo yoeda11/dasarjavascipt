@@ -15,7 +15,9 @@
         <br><br>
         <label>ALAMAT : </label><input type="text" id="Alamata">
         <br><br>
-        <button id="submittes" type="submit">Kirim</button>
+        <!-- <button id="submittes" type="submit">Kirim</button> -->
+        <button type="submit">Kirimmmmm</button>
+        <input type="submit" value="Send" />
         
     </form>
    
@@ -23,7 +25,26 @@
     <p id="nama"></p>
     <p id="alamat"></p>
 
-    <script src="11object.js"></script>
+    <div id="hasill"></div>
+
+    <script>
+        let ambilfrm = document.getElementById("run");
+        let hasil = document.getElementById("hasill");
+        
+        ambilfrm.addEventListener("submit", function(event){
+            event.preventDefault();
+            
+            
+            let namanya = document.getElementById("Namaa").value;
+
+            let newpara = document.createElement("p");
+            newpara.textContent = namanya;
+
+           
+            hasil.appendChild(newpara);
+        });
+
+    </script>
 
     
 </body>
