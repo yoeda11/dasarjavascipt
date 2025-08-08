@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form id="run">
+    <!-- <form name="run2"> -->
+        
+        <label>NAMA : </label><input type="text" id="Namaa">
+        <!-- <label>NAMA : </label><input type="text" name="ama"> -->
+        <br><br>
+        <label>ALAMAT : </label><input type="text" id="Alamata">
+        <br><br>
+        <!-- <button id="submittes" type="submit">Kirim</button> -->
+        <button type="submit">Kirimmmmm</button>
+        <input type="submit" value="Send" />
+        
+    </form>
+   
+
+    <p id="nama"></p>
+    <p id="alamat"></p>
+
+    <div id="hasill"></div>
+
+    <script>
+        let ambilfrm = document.getElementById("run");
+        let hasil = document.getElementById("hasill");
+        
+        ambilfrm.addEventListener("submit", function(event){
+            event.preventDefault();
+            
+            
+            let namanya = document.getElementById("Namaa").value;
+
+            localStorage.setItem("nama", namanya);
+            console.log(namanya);
+
+
+            // const nama = localStorage.getItem("nama");
+
+
+
+            let namaaa = localStorage.getItem("nama");
+            namaaa.textContent = namanya;
+
+            // let newpara = document.createElement("p");
+            // newpara.textContent = namanya;
+
+           
+            // hasil.appendChild(newpara);
+            hasil.appendChild(namaaa);
+        });
+
+    </script>
+
+
+</body>
+</html>
