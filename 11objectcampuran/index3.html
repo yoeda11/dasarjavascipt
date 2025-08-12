@@ -47,15 +47,24 @@
 
 
             let namaaa = localStorage.getItem("nama");
-            namaaa.textContent = namanya;
+            //namaaa.textContent = namanya;
 
-            // let newpara = document.createElement("p");
-            // newpara.textContent = namanya;
+            let newpara = document.createElement("p");
+            newpara.textContent = namaaa;
 
-           
             // hasil.appendChild(newpara);
-            hasil.appendChild(namaaa);
+            hasil.appendChild(newpara);
         });
+
+        /*
+        KARENA YANG DI TAMPILAKAN HANYA DATA STORAGE YANG TERBARU, 
+        JADI HARUS DITAMBAHKAN ARRAY ATAU OBJECT
+        */
+        let namaaa = localStorage.getItem("nama");
+        let newpara = document.createElement("p");
+        newpara.textContent = namaaa;
+        hasil.appendChild(newpara);
+
 
     </script>
 
